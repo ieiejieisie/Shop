@@ -1,0 +1,23 @@
+/* ...весь попередній CSS */
+
+#cart-items {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;

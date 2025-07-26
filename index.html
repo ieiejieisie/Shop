@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазин Розпису</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🖌 Магазин Розпису</h1>
+    <nav>
+      <a href="#products">Товари</a>
+      <a href="#cart">🛒 Кошик (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Наші товари</h2>
+      <div class="product-list">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x200" alt="Футболка"/>
+          <h3>Футболка з розписом</h3>
+          <p>Яскрава футболка з ручним розписом.</p>
+          <p><strong>500</strong> грн</p>
+          <button onclick="addToCart('Футболка з розписом', 500)">До кошика</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200x200" alt="Горня"/>
+          <h3>Горнятко з квітами</h3>
+          <p>Керамічне горнятко з авторським розписом.</p>
+          <p><strong>250</strong> грн</p>
+          <button onclick="addToCart('Горнятко з квітами', 250)">До кошика</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>🛒 Ваш кошик</h2>
+      <div id="cart-items"></div>
+      <p id="total">Загалом: 0 грн</p>
+      <a id="order-link" href="#" target="_blank" class="buy-btn">Оформити замовлення</a>
+    </section>
+
+    <section id="contact">
+      <h2>Контакти</h2>
+      <p>Telegram: <a href="https://t.me/твій_телеграм" target="_blank">@твій_телеграм</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Магазин Розпису</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
